@@ -12,7 +12,7 @@ const mulish = Mulish({
 function Navbar() {
   return (
     <nav
-      className={`fixed top-10 left-15 right-15  z-5 bg-secondary rounded-xl py-3 px-12 font-mulish ${mulish.className}`}
+      className={`z-15 fixed top-10 left-15 right-15 bg-secondary rounded-xl py-3 px-12 font-mulish ${mulish.className}`}
     >
       <div className="flex justify-between items-center gap-x-7">
         <div className="">

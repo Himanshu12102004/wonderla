@@ -65,3 +65,28 @@ export const cities = [
     subSection: [],
   },
 ];
+export const circularRideSection=[
+  {
+    name:"land",
+    image:"icons/landRides.svg",
+    imageClasses:"top-24 right-20",
+    tagClasses:"top-24 -right-20",
+    rideNumber:"73",
+    magnifierCoords:{x:28.5,y:6.5}
+  },
+  {
+    name:"water",
+    image:"icons/waterRides.svg",
+    imageClasses:"top-1/2 -right-3",
+    tagClasses:"top-1/2 -right-42",
+    rideNumber:"54",
+    magnifierCoords:{x:34.5,y:19}
+  },{
+    name:"kids",
+    image:"icons/kidsRides.svg",
+    imageClasses:"bottom-12 right-20",
+    tagClasses:"bottom-12 -right-20",
+    rideNumber:"35",
+    magnifierCoords:{x:28.5,y:30.5}
+  },
+]

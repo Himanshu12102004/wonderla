@@ -18,6 +18,7 @@
   --color-secondary: rgb(255, 255, 255);
   --color-button: rgb(250, 214, 0);
   --color-text: rgb(51, 77, 207);
+  --color-blue-light:rgb(120 139 235);
 }
 
 @media (prefers-color-scheme: dark) {
