@@ -16,23 +16,22 @@ function Magnifier({ x, y }: { x: number; y: number }) {
     </motion.div>
   );
 }
-function CircularSideBar() {
-  const [selection, setSelection] = useState(0);
-  const [angle, setAngle] = useState(angleMapping[selection]);
+function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelectedSlide:(x:number)=>void,currentSelectedSlide:number}) {
+  const [angle, setAngle] = useState(angleMapping[currentSelectedSlide]);
   const [magnifierCoordsX, setMagnifierCoordsX] = useState(
-    circularRideSection[selection].magnifierCoords.x
+    circularRideSection[currentSelectedSlide].magnifierCoords.x
   );
   const [magnifierCoordsY, setMagnifierCoordsY] = useState(
-    circularRideSection[selection].magnifierCoords.y
+    circularRideSection[currentSelectedSlide].magnifierCoords.y
   );
   useEffect(() => {
-    const newAngle = angleMapping[selection];
+    const newAngle = angleMapping[currentSelectedSlide];
     animate(angle, newAngle, {
       duration: 0.3,
       onUpdate: (latest) => setAngle(latest),
     });
-    const newCoordX = circularRideSection[selection].magnifierCoords.x;
-    const newCoordY = circularRideSection[selection].magnifierCoords.y;
+    const newCoordX = circularRideSection[currentSelectedSlide].magnifierCoords.x;
+    const newCoordY = circularRideSection[currentSelectedSlide].magnifierCoords.y;
     animate(magnifierCoordsX, newCoordX, {
       duration: 0.3,
       onUpdate: (latest) => setMagnifierCoordsX(latest),
@@ -41,10 +40,10 @@ function CircularSideBar() {
       duration: 0.3,
       onUpdate: (latest) => setMagnifierCoordsY(latest),
     });
-  }, [selection]);
+  }, [currentSelectedSlide]);
   return (
     <div className="flex h-full items-center justify-center overflow-hidden relative flex-1/3 pt-20">
-      <div className="absolute -translate-x-11/24">
+      <div className="absolute -translate-x-9/24">
         <motion.div
           className="h-[600px] w-[600px] rounded-full flex items-center justify-center relative"
           style={{
@@ -64,15 +63,16 @@ function CircularSideBar() {
             <div key={index}>
               <div
                 onClick={() => {
-                  setSelection(index);
+                  changeSelectedSlide(index);
                 }}
                 className={`absolute ${data.imageClasses} transform z-20 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer`}
               >
                 <img
                   style={{
-                    scale: selection === index ? '1.4' : '1',
+                    scale: currentSelectedSlide === index ? '1.4' : '1',
                     transition: 'scale 0.3s ease-in-out',
                   }}
+                  className=' '
                   src={data.image}
                   alt="rideIcon"
                 />
