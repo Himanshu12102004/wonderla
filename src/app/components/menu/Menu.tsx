@@ -9,125 +9,9 @@ import {
 } from '@/app/data/data';
 import { div } from 'framer-motion/client';
 import React, { useEffect, useState } from 'react';
-type PropType = {
-  data: {
-    imageSrc: string;
-    name: string;
-    description: string;
-  };
-};
-type SpecialPropType = {
-  data: {
-    imageSrc: string;
-    name: string;
-    description: string;
-    onExpand: React.ReactNode;
-    height: number;
-  };
-};
-const SpecialOption: React.FC<SpecialPropType> = ({ data }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div className="flex-1">
-      <div
-        onClick={() => {
-          setIsOpen(!isOpen);
-        }}
-        className="flex items-center gap-3 justify-between"
-      >
-        <div className="flex items-center gap-3">
-          <div>
-            <img className="h-7" src={data.imageSrc} alt="" />
-          </div>
-          <div>
-            <div className="text-xl font-normal mb-1">{data.name}</div>
-            <div className="text-xs text-gray-600">{data.description}</div>
-          </div>
-        </div>
-        <svg
-          height="24"
-          width="24"
-          className=""
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#334DCF"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M6 9L12 15L18 9"></path>
-        </svg>
-      </div>
-      <div
-        style={{
-          height: isOpen ? `${data.height}px` : 0,
-        }}
-        className={` overflow-hidden transform transition-all ease-out duration-350`}
-      >
-        {data.onExpand}
-      </div>
-      <div>
-        <div className="h-4"></div>
-        <hr className="border-t-1 border-gray-200" />
-        <div className="h-4"></div>
-      </div>
-    </div>
-  );
-};
-const Option: React.FC<PropType> = ({ data }) => {
-  return (
-    <div className="flex-1">
-      <div className="flex items-center gap-3">
-        <div>
-          <img className="h-7" src={data.imageSrc} alt="" />
-        </div>
-        <div>
-          <div className="text-xl font-normal mb-1">{data.name}</div>
-          <div className="text-xs text-gray-600">{data.description}</div>
-        </div>
-      </div>
-      <div>
-        <div className="h-4"></div>
-        <hr className="border-t-1 border-gray-200" />
-        <div className="h-4"></div>
-      </div>
-    </div>
-  );
-};
-type PremiumOptionsPropType = {
-  data: {
-    bgColor: string;
-    imageSrc: string;
-    description: string;
-    name: string;
-    textColor: string;
-  };
-};
-const PremiumOptions: React.FC<PremiumOptionsPropType> = ({ data }) => {
-  return (
-    <div
-      className={`flex-1 p-2 rounded-2xl`}
-      style={{ backgroundColor: data.bgColor, color: data.textColor }}
-    >
-      <div className="flex items-center gap-4">
-        <div>
-          <img className="h-10" src={data.imageSrc} alt="" />
-        </div>
-        <div>
-          <div className="text-xl font-normal mb-1">{data.name}</div>
-          <div
-            className="text-xs text-gray-600"
-            style={{
-              color: data.textColor.includes('255') ? data.textColor : '',
-            }}
-          >
-            {data.description}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+import OptionWithDropDown from './subComponents/OptionWithDropDown';
+import OptionWithoutDropDown from './subComponents/OptionWithoutDropDown';
+import PremiumOptions from './subComponents/PremiumOptions';
 type LocationPropType = {
   image: string;
   city: string;
@@ -201,7 +85,7 @@ function Menu({
               <img className="h-15" src={images.wonderla} alt="" />
               <div
                 onClick={hideMenuBar}
-                className="mr-4 p-1.5 rounded-full border-gray-200 border"
+                className="mr-4 p-1.5 rounded-full cursor-pointer border-gray-200 border"
               >
                 <svg
                   width="24"
@@ -222,7 +106,7 @@ function Menu({
 
             <div className="h-full min-h-0 overflow-y-scroll p-7">
               <div className="h-fit flex flex-col overflow-y-visible flex-1 pb-24">
-                <SpecialOption
+                <OptionWithDropDown
                   data={{
                     ...specialMenuOptions[0],
                     onExpand: locationCards,
@@ -232,7 +116,7 @@ function Menu({
 
                 {menuOptions.slice(0, 3).map((elem, index) => (
                   <div key={index}>
-                    <Option data={elem} />
+                    <OptionWithoutDropDown data={elem} />
                   </div>
                 ))}
                 <div className="flex flex-col gap-2">
@@ -241,10 +125,10 @@ function Menu({
                   ))}
                 </div>
                 <div className="pt-3">
-                  <Option data={menuOptions[3]} />
+                  <OptionWithoutDropDown data={menuOptions[3]} />
                 </div>
                 <div className="mb-8">
-                  <SpecialOption
+                  <OptionWithDropDown
                     data={{
                       ...specialMenuOptions[1],
                       onExpand: quickLinks,
@@ -252,7 +136,7 @@ function Menu({
                     }}
                   />
                 </div>
-                <Option data={menuOptions[4]} />
+                <OptionWithoutDropDown data={menuOptions[4]} />
               </div>
             </div>
           </motion.div>

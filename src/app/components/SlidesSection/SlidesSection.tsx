@@ -1,6 +1,6 @@
 import { Mulish } from 'next/font/google';
 import React, { useState, useEffect } from 'react';
-import EmblaCarousel from './components/Carousel/Carousel';
+import EmblaCarousel from './subComponents/Carousel';
 import { EmblaOptionsType } from 'embla-carousel';
 import { rides } from '@/app/data/data';
 
@@ -16,7 +16,6 @@ function SlidesSection({ currentCategory }: { currentCategory: number }) {
   useEffect(() => {
     myRide = rides[currentCategory];
   }, [currentCategory]);
-  console.log(myRide);
   return (
     <div className="flex-4/5 h-full ml-5">
       <h1

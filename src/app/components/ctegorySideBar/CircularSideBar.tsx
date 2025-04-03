@@ -1,22 +1,15 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, animate } from 'framer-motion';
 import { circularRideSection } from '@/app/data/data';
+import Magnifier from './subComponents/Magnifier';
 const angleMapping = [45, 90, 135];
-function Magnifier({ x, y }: { x: number; y: number }) {
-  return (
-    <motion.div
-      className={`absolute transform -translate-x-1/2 -translate-y-1/2`}
-      style={{ top: `${y}rem`, left: `${x}rem` }}
-    >
-      <div className="h-[170px] bg-button w-[170px] rounded-full flex justify-center items-center">
-        <div className="h-[150px] w-[150px] rounded-full bg-white"></div>
-      </div>
-    </motion.div>
-  );
-}
-function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelectedSlide:(x:number)=>void,currentSelectedSlide:number}) {
+type PropType = {
+  changeSelectedSlide: (x: number) => void;
+  currentSelectedSlide: number;
+};
+const CircularSideBar:React.FC<PropType> = ({ changeSelectedSlide, currentSelectedSlide }) => {
   const [angle, setAngle] = useState(angleMapping[currentSelectedSlide]);
   const [magnifierCoordsX, setMagnifierCoordsX] = useState(
     circularRideSection[currentSelectedSlide].magnifierCoords.x
@@ -30,8 +23,10 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
       duration: 0.3,
       onUpdate: (latest) => setAngle(latest),
     });
-    const newCoordX = circularRideSection[currentSelectedSlide].magnifierCoords.x;
-    const newCoordY = circularRideSection[currentSelectedSlide].magnifierCoords.y;
+    const newCoordX =
+      circularRideSection[currentSelectedSlide].magnifierCoords.x;
+    const newCoordY =
+      circularRideSection[currentSelectedSlide].magnifierCoords.y;
     animate(magnifierCoordsX, newCoordX, {
       duration: 0.3,
       onUpdate: (latest) => setMagnifierCoordsX(latest),
@@ -56,9 +51,9 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
           }}
         >
           <div className="bg-primary h-[420px] w-[420px] rounded-full"></div>
-        
-            <Magnifier x={magnifierCoordsX} y={magnifierCoordsY} />
-        
+
+          <Magnifier x={magnifierCoordsX} y={magnifierCoordsY} />
+
           {circularRideSection.map((data, index) => (
             <div key={index}>
               <div
@@ -72,7 +67,7 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
                     scale: currentSelectedSlide === index ? '1.4' : '1',
                     transition: 'scale 0.3s ease-in-out',
                   }}
-                  className=' '
+                  className=" "
                   src={data.image}
                   alt="rideIcon"
                 />
@@ -90,6 +85,6 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
       </div>
     </div>
   );
-}
+};
 
 export default CircularSideBar;

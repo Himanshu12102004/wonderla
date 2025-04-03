@@ -92,11 +92,12 @@ export const circularRideSection = [
   },
 ];
 
+
 export const rides = [
   [
     {
       name: 'Sky Ring',
-      href: '/kochi/rides/sky-ring',
+      href: '/rides/kochi/rides/sky-ring',
       location: 'Kochi',
       description:
         'Shoot up a sky-high tower for a birds-eye view of Wonderla Kochi!',
@@ -105,7 +106,7 @@ export const rides = [
     },
     {
       name: 'Mission Interstellar',
-      href: '/bengaluru/rides/mission-interstellar',
+      href: '/rides/bengaluru/rides/mission-interstellar',
       location: 'Bengaluru',
       description:
         'Blast through cosmic chaos on a wild, out-of-this-world space\n              ride!',
@@ -114,7 +115,7 @@ export const rides = [
     },
     {
       name: 'G Fall',
-      href: '/hyderabad/rides/g-fall',
+      href: '/rides/hyderabad/rides/g-fall',
       location: 'Hyderabad',
       description:
         'Brace yourself for a heart-pounding, high-speed plunge into a\n              dizzying freefall!',
@@ -123,7 +124,7 @@ export const rides = [
     },
     {
       name: 'Equinox',
-      href: '/bhubaneswar/rides/equinox',
+      href: '/rides/bhubaneswar/rides/equinox',
       location: 'Bhubaneswar',
       description:
         'A thrill monster that flips you around 360 degrees in a\n              gravity-defying spin.',
@@ -132,7 +133,7 @@ export const rides = [
     },
     {
       name: 'Space Gun',
-      href: '/kochi/rides/space-gun',
+      href: '/rides/kochi/rides/space-gun',
       location: 'Kochi',
       description:
         'See the world upside-down, dangling from high up above the ground!',
@@ -141,7 +142,7 @@ export const rides = [
     },
     {
       name: 'Recoil',
-      href: '/bengaluru/rides/recoil',
+      href: '/rides/bengaluru/rides/recoil',
       location: 'Bengaluru',
       description:
         'India’s first-ever action-packed reverse looping roller coaster\n              ride!',
@@ -150,7 +151,7 @@ export const rides = [
     },
     {
       name: 'Hyperverse',
-      href: '/hyderabad/rides/hyperverse',
+      href: '/rides/hyderabad/rides/hyperverse',
       location: 'Hyderabad',
       description:
         'Get transported to another world as you soar through a\n              breathtaking 3D metaverse!',
@@ -159,7 +160,7 @@ export const rides = [
     },
     {
       name: 'Spinning Coaster',
-      href: '/bhubaneswar/rides/spinning-coaster',
+      href: '/rides/bhubaneswar/rides/spinning-coaster',
       location: 'Bhubaneswar',
       description:
         'A heart-pounding roller coaster ride that twists, turns and spins\n              you around!',
@@ -168,7 +169,7 @@ export const rides = [
     },
     {
       name: 'Air Race',
-      href: '/kochi/rides/air-race',
+      href: '/rides/kochi/rides/air-race',
       location: 'Kochi',
       description:
         'An exhilarating flight simulation with banks, loops and dives.',
@@ -177,7 +178,7 @@ export const rides = [
     },
     {
       name: 'Y-Scream',
-      href: '/bengaluru/rides/y-scream',
+      href: '/rides/bengaluru/rides/y-scream',
       location: 'Bengaluru',
       description:
         'Strap in tight to swing, spin and scream on this dizzying\n              360-degree thrill fest!',
@@ -189,7 +190,7 @@ export const rides = [
   [
     {
       name: 'Water Pendulum',
-      href: '/kochi/rides/water-pendulum',
+      href: '/rides/kochi/rides/water-pendulum',
       location: 'Kochi',
       description:
         'Hold on tight as you glide up and down on a water tube across a\n              U-shaped slide!',
@@ -198,7 +199,7 @@ export const rides = [
     },
     {
       name: 'Drop Loop',
-      href: '/bengaluru/rides/drop-loop',
+      href: '/rides/bengaluru/rides/drop-loop',
       location: 'Bengaluru',
       description:
         'Slide down a sky-high slope, twist through a loop and make a\n              splashy exit!',
@@ -207,7 +208,7 @@ export const rides = [
     },
     {
       name: 'Sea Lagoon',
-      href: '/hyderabad/rides/sea-lagoon',
+      href: '/rides/hyderabad/rides/sea-lagoon',
       location: 'Hyderabad',
       description:
         'Get soaked, splashed and sprayed in this thrilling pool paradise!',
@@ -216,7 +217,7 @@ export const rides = [
     },
     {
       name: 'Wave Pool',
-      href: '/bhubaneswar/rides/wave-pool',
+      href: '/rides/bhubaneswar/rides/wave-pool',
       location: 'Bhubaneswar',
       description:
         'Experience the bliss of waves washing over you, far away from the\n              sea.',
@@ -225,7 +226,7 @@ export const rides = [
     },
     {
       name: 'Korneto',
-      href: '/kochi/rides/korneto',
+      href: '/rides/kochi/rides/korneto',
       location: 'Kochi',
       description:
         'Slide, swirl and splash through a whirling vortex on this slippery\n              ride!',
@@ -234,7 +235,7 @@ export const rides = [
     },
     {
       name: 'Bullet',
-      href: '/bengaluru/rides/bullet',
+      href: '/rides/bengaluru/rides/bullet',
       location: 'Bengaluru',
       description:
         'Navigate through twists, tunnels and loops on 3 epic water slides!',
@@ -243,7 +244,7 @@ export const rides = [
     },
     {
       name: 'Screw',
-      href: '/hyderabad/rides/screw',
+      href: '/rides/hyderabad/rides/screw',
       location: 'Hyderabad',
       description:
         'Get ready to rush through dizzying turns and loops at mind-blowing\n              speeds!',
@@ -252,7 +253,7 @@ export const rides = [
     },
     {
       name: 'Drop & Tornado',
-      href: '/bhubaneswar/rides/drop-tornado',
+      href: '/rides/bhubaneswar/rides/drop-tornado',
       location: 'Bhubaneswar',
       description:
         'Zoom down through a twisty maze of 4 thrilling tunnels into a\n              splashy escape!',
@@ -261,7 +262,7 @@ export const rides = [
     },
     {
       name: 'Water Falls',
-      href: '/kochi/rides/water-falls',
+      href: '/rides/kochi/rides/water-falls',
       location: 'Kochi',
       description: 'Get drenched under a cascading waterfall with steep rocks.',
       videoUrl:
@@ -269,7 +270,7 @@ export const rides = [
     },
     {
       name: 'Harakiri',
-      href: '/bengaluru/rides/harakiri',
+      href: '/rides/bengaluru/rides/harakiri',
       location: 'Bengaluru',
       description:
         'Rush down, take a breather, and slide back down to the finish for\n              pure, non-stop thrill!',
@@ -280,7 +281,7 @@ export const rides = [
   [
     {
       name: 'Happy Kangaroo',
-      href: '/kochi/rides/happy-kangaroo',
+      href: '/rides/kochi/rides/happy-kangaroo',
       location: 'Kochi',
       description:
         'Plummet into a safe freefall with a tall & cheerful kangaroo!',
@@ -289,7 +290,7 @@ export const rides = [
     },
     {
       name: 'Mini Coco Cup',
-      href: '/bengaluru/rides/mini-coco-cup',
+      href: '/rides/bengaluru/rides/mini-coco-cup',
       location: 'Bengaluru',
       description:
         'Spin around in a gigantic cup placed on a rotating turntable\n              floor!',
@@ -298,7 +299,7 @@ export const rides = [
     },
     {
       name: 'Carousel',
-      href: '/hyderabad/rides/carousel',
+      href: '/rides/hyderabad/rides/carousel',
       location: 'Hyderabad',
       description: 'Gallop around on colourful horses like a seasoned cowboy!',
       videoUrl:
@@ -306,7 +307,7 @@ export const rides = [
     },
     {
       name: 'Crazy Cars',
-      href: '/bhubaneswar/rides/crazy-cars',
+      href: '/rides/bhubaneswar/rides/crazy-cars',
       location: 'Bhubaneswar',
       description:
         'Dash and crash into your friends’ cars in your very own Formula 1\n              circuit!',
@@ -315,7 +316,7 @@ export const rides = [
     },
     {
       name: 'Pony Train',
-      href: '/kochi/rides/pony-train',
+      href: '/rides/kochi/rides/pony-train',
       location: 'Kochi',
       description:
         'Hop onto a chariot-pulled pony ride through the world of fantasy!',
@@ -324,7 +325,7 @@ export const rides = [
     },
     {
       name: 'Kiddies Wheel',
-      href: '/bengaluru/rides/kiddies-wheel',
+      href: '/rides/bengaluru/rides/kiddies-wheel',
       location: 'Bengaluru',
       description:
         'A miniature giant wheel designed to give your children a taste of\n              real thrill without being half as scary.',
@@ -333,7 +334,7 @@ export const rides = [
     },
     {
       name: 'Funky Monkey',
-      href: '/hyderabad/rides/funky-monkey',
+      href: '/rides/hyderabad/rides/funky-monkey',
       location: 'Hyderabad',
       description: 'Plummet into a safe freefall with a tall & playful monkey!',
       videoUrl:
@@ -341,7 +342,7 @@ export const rides = [
     },
     {
       name: 'Jack-O-Coaster',
-      href: '/bhubaneswar/rides/jack-o-coaster',
+      href: '/rides/bhubaneswar/rides/jack-o-coaster',
       location: 'Bhubaneswar',
       description:
         'Ride on the edge with sharp curves, steep climbs and dizzying\n              drops!',
@@ -350,7 +351,7 @@ export const rides = [
     },
     {
       name: 'Mini Pirate Ship',
-      href: '/kochi/rides/mini-pirate-ship',
+      href: '/rides/kochi/rides/mini-pirate-ship',
       location: 'Kochi',
       description:
         'Sail like a pirate on a miniature, adrenaline-filled flying boat!',
@@ -359,7 +360,7 @@ export const rides = [
     },
     {
       name: 'Jumping Frog',
-      href: '/bengaluru/rides/jumping-frog',
+      href: '/rides/bengaluru/rides/jumping-frog',
       location: 'Bengaluru',
       description:
         'Hop on a frog and leap into ribbiting fun as you spin around!',
@@ -368,6 +369,7 @@ export const rides = [
     },
   ],
 ];
+
 
 export const menuOptions = [
   {

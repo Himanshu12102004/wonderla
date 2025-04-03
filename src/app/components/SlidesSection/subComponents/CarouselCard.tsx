@@ -1,5 +1,6 @@
 import Button from '@/app/components/universalComponents/Button';
 import { Mulish } from 'next/font/google';
+import Link from 'next/link';
 import React from 'react';
 
 const mulish = Mulish({
@@ -32,6 +33,7 @@ const CarouselCard: React.FC<{ data: PropType }> = ({ data }) => {
             className="hover:scale-105 transition-all "
             style={{ transition: 'all 200ms' }}
           >
+            <Link href={data.href}>
             <button
               className={`py-3 px-8 mt-3 uppercase font-extrabold bg-[#FAD504] rounded-lg text-text hover:cursor-pointer`}
             >
@@ -39,6 +41,7 @@ const CarouselCard: React.FC<{ data: PropType }> = ({ data }) => {
                 <div className="text-xs">Ride Details</div>
               </div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
