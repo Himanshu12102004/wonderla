@@ -26,7 +26,15 @@ function SlidesSection({ currentCategory }: { currentCategory: number }) {
       </h1>
       <EmblaCarousel options={OPTIONS} slides={myRide} />
       
-    </div>
+            <button
+              className={`py-4 px-24 mt-10 mb-10 hover:scale-110 transition-all font-extrabold bg-[#FAD504] rounded-full text-text hover:cursor-pointer`}
+              style={{ transition: 'all 200ms' }}
+            >
+              <div className="flex justify-center items-center gap-1">
+                <div className="text-sm">Explore All Rides!</div>
+              </div>
+            </button>
+          </div>
   );
 }
 

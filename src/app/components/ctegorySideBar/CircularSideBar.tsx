@@ -42,7 +42,7 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
     });
   }, [currentSelectedSlide]);
   return (
-    <div className="flex h-full items-center justify-center overflow-hidden relative flex-1/3 pt-20">
+    <div className="flex items-center justify-center overflow-hidde relative flex-1/3 pt-20">
       <div className="absolute -translate-x-9/24">
         <motion.div
           className="h-[600px] w-[600px] rounded-full flex items-center justify-center relative"
@@ -56,9 +56,9 @@ function CircularSideBar({changeSelectedSlide,currentSelectedSlide}:{changeSelec
           }}
         >
           <div className="bg-primary h-[420px] w-[420px] rounded-full"></div>
-          <div className="z-0">
+        
             <Magnifier x={magnifierCoordsX} y={magnifierCoordsY} />
-          </div>
+        
           {circularRideSection.map((data, index) => (
             <div key={index}>
               <div

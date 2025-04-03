@@ -93,7 +93,7 @@ export const circularRideSection = [
 ];
 
 export const rides = [
-   [
+  [
     {
       name: 'Sky Ring',
       href: '/kochi/rides/sky-ring',
@@ -277,7 +277,7 @@ export const rides = [
         'https://d22pimhl2qmbj7.cloudfront.net/public/Harakiri_480p_fb97d12eba.mp4',
     },
   ],
-   [
+  [
     {
       name: 'Happy Kangaroo',
       href: '/kochi/rides/happy-kangaroo',
@@ -367,4 +367,77 @@ export const rides = [
         'https://d22pimhl2qmbj7.cloudfront.net/public/Jumping_Frog_480p_c2a969782a.mp4',
     },
   ],
+];
+
+export const menuOptions = [
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/city_45e0a87cc8.svg?w=48&q=75',
+    name: 'Resorts',
+    description: 'Get a rejuvenating experience at Wonderla Resort',
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/discount_e3ac599ad9.svg?w=48&q=75',
+    name: 'Offers & Combos',
+    description: 'Plan the perfect day with exciting offers',
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/time_68af0a1a84.svg?w=48&q=75',
+    name: 'Timings And Guidelines',
+    description: 'Know the timings and other guidelines',
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/about_us_3ae10e9512.svg?w=48&q=75',
+    name: 'About Us',
+    description: 'Know all about Wonderla',
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/support_1_f316ee7cce.svg?w=48&q=75',
+    name: 'Contact Us',
+    description: 'Get In Touch Wordela Team',
+  },
+];
+export const specialMenuOptions = [
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/playground_e8b25627b1.svg?w=48&q=75',
+    name: 'Parks',
+    description: 'Explore Your favourite Wonderla Park',
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/unlink_1_bb57b8aa2f.svg?w=48&q=75',
+    name: 'Quick Links',
+    description: 'Explore all other relevant information here',
+  },
+];
+export const premiumMenuLinks = [
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/group_booking_1adcd0978a.svg?w=96&q=75',
+    name: 'Group Booking',
+    description: 'Reach Out To Wanderla Team',
+    bgColor: 'rgb(250, 214, 0)',
+    textColor:"rgb(0,0,0)"
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/tour_portal_c097403085.svg?w=96&q=75',
+    name: 'Tour Operator Portal',
+    description: 'Reach Out To Wanderla Team',
+    bgColor: 'rgb(51,77,207)',
+    textColor:"rgb(255,255,255)",
+  },
+  {
+    imageSrc:
+      'https://d22pimhl2qmbj7.cloudfront.net/public/group_booking_1adcd0978a.svg?w=96&q=75',
+    name: 'Partner With Us',
+    description: 'Reach Out To Wanderla Team',
+    bgColor: 'rgb(250, 214, 0)',
+    textColor:"rgb(0,0,0)"
+  },
 ];
