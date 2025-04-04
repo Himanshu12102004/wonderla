@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wonderla
 
-## Getting Started
+This project is a component of the website [Wonderla](https://www.wonderla.com/).
 
-First, run the development server:
+## Setup Instructions
 
+### Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Himanshu12102004/wonderla
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies & Start the Project
+```bash
+cd wonderla
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### View the Website
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Folder Structure
 
-## Learn More
+The project follows this structure:
 
-To learn more about Next.js, take a look at the following resources:
+```
+.
+└── src/
+    └── app/
+        ├── components/          # Contains individual components
+        │   └── componentName/
+        │       └── subComponents/ # Sub-components for the component
+        ├── data/                 # Holds JSON data
+        ├── ride-selection/       # Main component to be developed
+        └── rides/                # Routing for dummy links
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Folder Details
+- **`components/`** → Houses all UI components, each inside its own folder.
+- **`data/`** → Stores JSON data used across the website.
+- **`ride-selection/`** → Contains the main component to be developed.
+- **`rides/`** → Used for routing dummy links.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How to Contribute
 
-## Deploy on Vercel
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes & commit them.
+4. Raise a Pull Request (PR) for review.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
