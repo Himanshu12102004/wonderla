@@ -15,11 +15,12 @@ function RideSelection() {
     <div>
       <div
         className={`sm:invisible flex justify-center items-center visible absolute top-0 left-0 right-0 bottom-0 z-50 text-cyan-50 ${mulish.className} text-4xl`}
-        style={{ backdropFilter: 'blur(10px)',backgroundColor:"rgba(0,0,0,0.7)" }}
+        style={{
+          backdropFilter: 'blur(10px)',
+          backgroundColor: 'rgba(0,0,0,0.7)',
+        }}
       >
-        <div>
-        OPEN THE WEBSITE ON PC 
-        </div>
+        <div>OPEN THE WEBSITE ON PC</div>
       </div>
 
       <div className={`bg-primary ${mulish.className}`}>

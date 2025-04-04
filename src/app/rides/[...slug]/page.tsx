@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
 
-function page() {
+function Page() {
   const url=usePathname()
   return (
     <div className='h-full w-full flex items-center justify-center'>
@@ -10,4 +10,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
