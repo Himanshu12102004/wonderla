@@ -42,6 +42,7 @@ body {
   --slide-size: 70%;
 }
 .embla__viewport {
+  height: 400px;
   overflow: hidden;
 }
 .embla__container {
